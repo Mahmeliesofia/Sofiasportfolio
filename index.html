@@ -6,28 +6,101 @@
     <title>My web project</title>
     <style>
     
-   .mummy {
+  
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Poor+Story|Roboto+Mono');
+h2 {
+ 
+}
+.box {
+  width: 100%;
+  display: block;
+  float: right;
+  
+}
+.box2 {
+  border: 20px solid white;
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  right: 100px;
+  
+  
+}
+
+.Header {
+  color: white;
+  font-size: 80px; 
+  text-align: center;
+  font-family: 'Roboto Mono', monospace; 
+}
+
+p{
+  color: white;
+  font-size: 30px; 
+  text-align: right;
+  font-family: 'Merriweather', serif;
+}
+
+.title {
+  color: #722f2f;
+  fontsize: 50px;
+  text-align: right;
+  font-family: 'Merriweather', serif;
+}
+
+.fullwidth {
+  width: 100%;
+}
+
+.Workpic1{
+  width: 100%;
+}
+
+.mummy {
   /*flexbox*/
    display: flex;
    justify-content: center;
+  overflow: hidden;
  }
  .baby {
    /*styling*/
    width: 33%;
+   margin: 20px;   
+   text-align: center;
+   display: flex;
+   flex-direction: column;
  }
+.baby p {
+  flex-grow: 2;
+ 
+  margin-top: 0;
+  height: 70px;
+}
+
+
 
 
 
     </style>
   </head>
   <body>
-  
- <section class="work">
-  <h2 class="title">Work</h2>
+  <section class="box">
+  <img class="fullwidth" src="https://bit.ly/2yO3e1X" alt="Plant"/>
+  <section class="box2">
+    <h1 class="Header">sofia andersson</h1>
+    <p>UX Designer</p>
+    <h2 class="title">About</h2>
+  </section>
 </section>
-      <section class="mummy">
-        
-      <section class="baby">
+
+
+
+<section class="work">
+  <h2 class="title">Work</h2>
+ 
+  <section class="mummy">
+    
+  <section class="baby">
     <img class="Workpic1" src="https://d1ic4altzx8ueg.cloudfront.net/finder-us/wp-uploads/2018/02/usfpl-servicedogfinancing-featured-image-250x196.png" alt="Service Dog"/> 
     <p>Charlie St Cloud</p>
     </section>
@@ -41,6 +114,8 @@
     <img class="Workpic1" src="http://static-11.sinclairstoryline.com/resources/media/3522d678-fb53-4ba6-952a-2bc0cc74f380-large16x9_tacoma_school_bus_01.jpg?1540864231968" alt="Bus"/>
     <p>Behind the Scenes of Public Transportation</p>
     </section>
+</section>
+
  
 </section>
 
